@@ -32,6 +32,12 @@ const NavBar = () => {
     setNav(!nav);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      toggleNav();
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -41,22 +47,29 @@ const NavBar = () => {
       <ul className={`nav-links ${nav ? 'active' : ''}`}>
         {links.map(({ id, link }) => (
           <li key={id} className="nav-link">
-            <Link to={link} smooth duration={500}>
+            <Link to={link} smooth duration={500} tabIndex={0} onKeyDown={handleKeyDown}>
               {link}
             </Link>
           </li>
         ))}
       </ul>
 
-      <div className="menu-icon" onClick={() => setNav(!nav)}>
+      <button type="button" className="menu-icon" onClick={toggleNav} onKeyDown={handleKeyDown}>
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </div>
+      </button>
 
       {nav && (
         <ul className="mobile-menu">
           {links.map(({ id, link }) => (
             <li key={id} className="mobile-link">
-              <Link onClick={toggleNav} to={link} smooth duration={500}>
+              <Link
+                onClick={toggleNav}
+                to={link}
+                smooth
+                duration={500}
+                tabIndex={0}
+                onKeyDown={handleKeyDown}
+              >
                 {link}
               </Link>
             </li>

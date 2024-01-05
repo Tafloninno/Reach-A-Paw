@@ -23,8 +23,8 @@ body {
   z-index: 10;
 }
 
-.logo {
-  font-size: 2rem; /* Adjust as needed */
+.logo h2{
+  font-size: 20px; /* Adjust as needed */
   font-weight: bold;
 }
 
