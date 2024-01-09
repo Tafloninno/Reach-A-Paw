@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000; /* Replace with your desired background color */
+  background-color: transparent; /* Replace with your desired background color */
   color: #fff;
   height: 80px; /* Adjust as needed */
   padding: 0 20px;
@@ -39,7 +39,7 @@ body {
   margin-right: 20px;
   font-weight: 500;
   cursor: pointer;
-  color: #888; /* Adjust as needed */
+  color: white; /* Adjust as needed */
   text-transform: capitalize;
   transition: color 0.2s, transform 0.2s;
 }
