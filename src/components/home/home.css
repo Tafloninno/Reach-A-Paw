@@ -50,6 +50,19 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    .home-container {
+        padding: 20px;
+        /* Adjust the margin as needed */
+      }
+    .home-word h2 {
+        font-size: 3.4rem;
+        margin-top: 30%;
+      } 
+
+    .home-word h4 {
+        font-size: 24px;
+        margin-top: 2rem;
+      }
 
     
   }
