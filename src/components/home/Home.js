@@ -13,7 +13,7 @@ const Home = () => (
         <h4>Learn About out passionate team and how you can help</h4>
       </div>
       <div className="home-donate-button">
-        <button type="button">Donate</button>
+        <button type="button">GET INVOLVED</button>
       </div>
     </div>
   </div>
